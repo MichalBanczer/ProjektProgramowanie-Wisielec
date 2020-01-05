@@ -1,0 +1,13 @@
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\bin\Debug\Wisielec.exe.config
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\bin\Debug\Wisielec.exe
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\bin\Debug\Wisielec.pdb
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.csprojAssemblyReference.cache
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.Form1.resources
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.Properties.Resources.resources
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.csproj.GenerateResource.cache
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.exe
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.pdb
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\bin\Debug\Wisielec.exe.manifest
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\bin\Debug\Wisielec.application
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.exe.manifest
+C:\Users\michb\Desktop\Projekt programowanie wisielec\Wisielec\Wisielec\obj\Debug\Wisielec.application
