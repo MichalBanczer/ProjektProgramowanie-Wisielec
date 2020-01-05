@@ -1,0 +1,120 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Wisielec
+{
+    public partial class Form1 : Form
+    {
+        String word;
+        int how_miss = 0;
+        public Form1()
+        {
+            InitializeComponent();
+            random_word();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (how_miss < 5)
+            {
+                string letter = textBox1.Text;
+                bool hit = false;
+                int where_hit = 0;
+
+                for (int i = 1; i < 6; i++)
+                {
+                    if (Convert.ToString(word[i]) == letter)
+                    {
+                        hit = true;
+                        where_hit = i;
+
+                        if (where_hit == 1) { label2.Text = letter; }
+                        if (where_hit == 2) { label3.Text = letter; }
+                        if (where_hit == 3) { label4.Text = letter; }
+                        if (where_hit == 4) { label5.Text = letter; }
+                        if (where_hit == 5) { label6.Text = letter; }
+                    }
+
+
+
+                }
+                if (hit == false)
+                {
+                    how_miss = how_miss + 1;
+                    if (how_miss == 1) { pictureBox1.Image = global::Wisielec.Properties.Resources.r1; }
+                    if (how_miss == 2) { pictureBox1.Image = global::Wisielec.Properties.Resources.r2; }
+                    if (how_miss == 3) { pictureBox1.Image = global::Wisielec.Properties.Resources.r3; }
+                    if (how_miss == 4) { pictureBox1.Image = global::Wisielec.Properties.Resources.r4; }
+                    if (how_miss == 5) {
+                        pictureBox1.Image = global::Wisielec.Properties.Resources.r5;
+                        button2.Visible = true;
+                    }
+                }
+                win();
+            }
+            else
+            {
+                pictureBox1.Image = global::Wisielec.Properties.Resources.przegrana; 
+            }
+
+        }
+
+        private void random_word()
+        {
+            string[] words = { "loteria", "marchew", "krakers", "pytanie", "liliput", "zadanie" };
+            int how_words = words.Length;
+            Random gen = new Random();
+            int index_words = gen.Next(0, how_words);
+            word = words[index_words];
+            label1.Text = Convert.ToString(word[0]);
+            label7.Text = Convert.ToString(word[6]);
+        }
+
+        private void win()
+        {
+            if (label2.Text != "_")
+            {
+                if (label3.Text != "_")
+                {
+                    if (label4.Text != "_")
+                    {
+                        if (label5.Text != "_")
+                        {
+                            if (label6.Text != "_")
+                            {
+                                pictureBox1.Image = global::Wisielec.Properties.Resources.wygrana;
+                                button2.Visible = true;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            random_word();
+            label2.Text = "_";
+            label3.Text = "_";
+            label4.Text = "_";
+            label5.Text = "_";
+            label6.Text = "_";
+            how_miss = 0;
+            button2.Visible = false;
+            pictureBox1.Image = null;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
